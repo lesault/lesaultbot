@@ -1,0 +1,20 @@
+{
+  "admin": {
+    "name": "admin",
+    "permissions": [
+      "*"
+    ],
+    "members": [
+      "lesault",
+      "channel"
+    ]
+  },
+  "global": {
+    "name": "global",
+    "permissions": [
+      "vote",
+      "listpolls"
+    ],
+    "members": []
+  }
+}
