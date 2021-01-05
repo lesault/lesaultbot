@@ -2,7 +2,8 @@
   "admin": {
     "name": "admin",
     "permissions": [
-      "*"
+      "*",
+      "splay"
     ],
     "members": [
       "lesault"
@@ -12,8 +13,19 @@
     "name": "global",
     "permissions": [
       "vote",
-      "listpolls"
+      "listpolls",
+      "me"
     ],
     "members": []
+  },
+  "frozen": {
+    "name": "frozen",
+    "permissions": [
+      "-me"
+    ],
+    "members": [
+      "lesault",
+      "userman2"
+    ]
   }
 }

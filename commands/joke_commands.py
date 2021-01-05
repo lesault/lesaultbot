@@ -11,7 +11,7 @@ async def cmd_function(msg, *args):
         subject = '&contains=' + args[0].replace(' ', '%20')
     else: 
         subject=''
-    joke = json.loads(urlopen('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,racist,sexist,explicit' + subject).read())
+    joke = json.loads(urlopen('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Spooky,Christmas?blacklistFlags=nsfw,religious,racist,sexist,explicit' + subject).read())
     if joke['error'] == False:
         if joke['type'] == 'single':
             message = joke['joke'].split('\n')

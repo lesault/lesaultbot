@@ -26,3 +26,15 @@ def fortune_options(msg):
                 'You have an unusual magnetic personality.  Don\'t walk too close to metal objects which are not fastened down',
                 'Don\'t tell any big lies today.  Small ones can be just as effective.']
     return random.choice(fortunes)
+
+
+@Command('lurk')
+async def cmd_function(msg, *args):
+    await msg.reply(lurk_options(msg) + ' (lurking)')
+
+
+def lurk_options(msg):
+    lurk_messages = [f'{msg.author} hides in the shadows and watches silently.',
+                     f'{msg.author} disappears in a puff of smoke.',
+                     ]
+    return random.choice(lurk_messages)

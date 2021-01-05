@@ -127,3 +127,8 @@ dmypy.json
 database.sqlite
 configs/config.json
 todo.md
+mods/test.py
+sounds/front-desk-bell.mp3
+sounds/Heart_Beat.mp3
+sounds/GBUGLY Whistle.mp3
+test.py
